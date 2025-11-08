@@ -9,9 +9,10 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.use(expressLayouts);
+app.use(express.static('public'));
 app.set('layout', 'layout');
 
 // ✅ must come BEFORE app.use('/', indexRouter);
