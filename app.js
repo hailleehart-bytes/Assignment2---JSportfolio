@@ -9,15 +9,15 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.use(express.static('public'));
+app.use(expressLayouts);
 app.set('layout', 'layout');
 
-// ✅ must come BEFORE app.use('/', indexRouter);
+// static files
 app.use(express.static(path.join(__dirname, 'public')));
 
+// routes
 app.use('/', indexRouter);
 
 export default app;
