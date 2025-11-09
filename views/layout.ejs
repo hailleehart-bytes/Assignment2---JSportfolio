@@ -1,12 +1,15 @@
 <!DOCTYPE html>
+<!--Most of this code is taken and learned from the past assignment, as the website required similar attributes-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= title %></title>
 
+<!--This is a link to google fonts which aids in the fonts for this site-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+    
+<!-- This website uses Bootstrap 5.3.0 for styling: https://getbootstrap.com/ -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="/stylesheets/style.css" />
@@ -16,12 +19,12 @@
 
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="/">WELCOME | Haillee's Portfolio</a>
+        <a class="navbar-brand" href="/">WELCOME | Haillee's Portfolio</a> <!--This creates a logo at the top of the page, I could have made a logo but opted for text-->
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+<!--this is the navigation bar, this allows the links in the nav bars to take the user to the correct part of the page without scrolling-->
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
@@ -33,7 +36,7 @@
         </div>
       </div>
     </nav>
-
+<!--This takes the main page content and places it after-->
     <main class="py-5">
       <%- body %>
     </main>

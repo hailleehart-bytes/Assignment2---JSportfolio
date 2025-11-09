@@ -1,16 +1,17 @@
+/*Body*/
 body {
   background-color: rgb(2, 10, 23);
   color: rgb(255, 255, 255);
   font-family: "Poppins", sans-serif;
 }
 
-/* Layout */
+/*Layout*/
 .container-max {
   max-width: 1000px;
   margin: auto;
 }
 
-/* Section tiles */
+/*Section tiles*/
 .section-block {
   background-color: rgb(31, 37, 48);
   padding: 40px;
@@ -25,6 +26,7 @@ body {
   margin-bottom: 25px;
 }
 
+/*Took this line of code from my olde assignment, this allows the skills listed to change color when the cursor hovers over it*/
 #skills li:hover{
     text-align: center;
     font-size: larger;
@@ -32,7 +34,7 @@ body {
     color:rgb(252, 61, 217);
 }
 
-/* Project Cards */
+/*Project tiles*/
 .project-card {
   background-color: rgb(31, 37, 48);
   padding: 25px;
@@ -41,32 +43,33 @@ body {
   transition: transform 0.2s ease;
 }
 
+/*this allows the project tiles to change color when the cursor hovers over it*/
 .project-card:hover {
   transform: translateY(-10px);
   background-color: rgb(252, 61, 217);
   color:rgb(255, 255, 255);
 }
 
-/* Hero image */
+/*Hero image*/
 .hero-img {
   border-radius: 50%;
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
-/* Navbar brand (your name) */
+/*Navbar brand*/
 .navbar-brand {
-  color: rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255);
   font-weight: 700;
 }
 
-/* Navbar links */
+/*Navbar links*/
 .navbar-nav .nav-link {
-  color: rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255);
 }
 
-/* Navbar links on hover */
+/*Navbar links on hover*/
 .navbar-nav .nav-link:hover {
-  color: rgb(252, 61, 217) !important;    /* light blue accent */
+  color: rgb(252, 61, 217);
 }
 
 /* Mobile menu icon (hamburger) */
