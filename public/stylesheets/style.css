@@ -12,7 +12,7 @@ body {
 
 /* Section tiles */
 .section-block {
-  background-color: #161b22;
+  background-color: rgb(31, 37, 48);
   padding: 40px;
   border-radius: 22px;
   margin-bottom: 60px;
@@ -25,17 +25,26 @@ body {
   margin-bottom: 25px;
 }
 
+#skills li:hover{
+    text-align: center;
+    font-size: larger;
+    padding: 10px 10px;
+    color:rgb(252, 61, 217);
+}
+
 /* Project Cards */
 .project-card {
-  background-color: #1f2530;
+  background-color: rgb(31, 37, 48);
   padding: 25px;
   border-radius: 18px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+  box-shadow: 0 4px 15px rgb(0, 0, 0);
   transition: transform 0.2s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  background-color: rgb(252, 61, 217);
+  color:rgb(255, 255, 255);
 }
 
 /* Hero image */
@@ -46,21 +55,22 @@ body {
 
 /* Navbar brand (your name) */
 .navbar-brand {
-  color: #ffffff !important;
+  color: rgb(255, 255, 255) !important;
   font-weight: 700;
 }
 
 /* Navbar links */
 .navbar-nav .nav-link {
-  color: #ffffff !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 /* Navbar links on hover */
 .navbar-nav .nav-link:hover {
-  color: #fc3dd9 !important;    /* light blue accent */
+  color: rgb(252, 61, 217) !important;    /* light blue accent */
 }
 
 /* Mobile menu icon (hamburger) */
 .navbar-toggler-icon {
   filter: invert(1);
+  color: rgb(252, 61, 217);
 }
